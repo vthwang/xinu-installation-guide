@@ -5,15 +5,13 @@ Welcome to the Xinu Installation Guide. This guide will walk you through the ste
 ```shell
 sudo apt install -y git vim build-essential texinfo bison flex
 cd ~
-mkdir xinu
-cd xinu
+mkdir xinu && cd xinu
 git clone https://github.com/xinu-os/xinu
 ```
 ### 2. Build binutils
 ```shell
 cd ~/xinu
-wget https://ftp.gnu.org/gnu/binutils/binutils-2.41.tar.gz
-tar xvf binutils-2.41.tar.gz
+wget https://ftp.gnu.org/gnu/binutils/binutils-2.41.tar.gz && tar xvf binutils-2.41.tar.gz
 mkdir binutils-2.41-build && cd binutils-2.41-build
 ../binutils-2.41/configure --prefix=/opt/mipsel-dev --target=mipsel --disable-nls
 make
@@ -28,8 +26,7 @@ sudo ln -s /usr/include /opt/mipsel-dev/mipsel/usr/include
 Install prerequisites for building GCC
 ```shell
 cd ~/xinu
-wget https://ftp.gnu.org/gnu/gcc/gcc-13.2.0/gcc-13.2.0.tar.gz
-tar xvf gcc-13.2.0.tar.gz
+wget https://ftp.gnu.org/gnu/gcc/gcc-13.2.0/gcc-13.2.0.tar.gz && tar xvf gcc-13.2.0.tar.gz
 cd gcc-13.2.0
 ./contrib/download_prerequisites
 ```
@@ -49,7 +46,7 @@ echo $PATH
 ```
 ### 6. Build Xinu image
 ```shell
-cd ~/xinu/xinu/complie
+cd ~/xinu/xinu/compile
 make PLATFORM=mipsel-qemu COMPILER_ROOT=/opt/mipsel-dev/bin/mipsel-
 ```
 ## Run Xinu
