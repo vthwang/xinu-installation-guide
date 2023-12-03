@@ -9,7 +9,7 @@ Also, contributions are always welcome. If you have any updates, corrections, or
 
 I have encountered an issue while testing on Ubuntu 22.04, primarily due to QEMU using version 6.2.0. According to the official QEMU documentation, the required machine type for Xinu - [the MIPS r4k platform - has been removed in version 5.2](https://www.qemu.org/docs/master/about/removed-features.html#mips-r4k-platform-removed-in-5-2). Instead, the Malta machine type is now recommended.
 
-This change has impacted our ability to run Xinu as intended on Ubuntu 22.04. We are actively seeking solutions or workarounds to address this compatibility issue.
+This change has impacted our ability to run Xinu as intended on Ubuntu 22.04. I am actively seeking solutions or workarounds to address this compatibility issue.
 
 ### Running Xinu on M-chip Mac
 🍎 Challenges with M-chip Mac
