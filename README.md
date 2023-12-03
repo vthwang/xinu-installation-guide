@@ -80,4 +80,5 @@ sudo apt install -y qemu-system-mips
 qemu-system-mipsel -M mips -m 16M -kernel xinu.boot -nographic
 ```
 Warning: If you got the error message `command not found: qemu-system-mipsel`, please try to type the command manually instead of copy and paste.
+
 Note: If you want to exit QEMU, press `Ctrl + A` and then press `X`.
