@@ -4,6 +4,22 @@ Welcome to the Xinu Installation Guide. This guide will walk you through the ste
 If you find this guide helpful, please consider starring ⭐ the repository on GitHub to show your support. Your stars encourage further development and improvements!
 
 Also, contributions are always welcome. If you have any updates, corrections, or enhancements, feel free to create a Pull Request. Let's collaborate to make this guide even better for everyone!
+## ⚠️ Compatibility Issues with Ubuntu 22.04 and M-chip Mac
+### 🛠️ Ubuntu 22.04 Issue with QEMU Version 6.2.0
+
+I have encountered an issue while testing on Ubuntu 22.04, primarily due to QEMU using version 6.2.0. According to the official QEMU documentation, the required machine type for Xinu - [the MIPS r4k platform - has been removed in version 5.2](https://www.qemu.org/docs/master/about/removed-features.html#mips-r4k-platform-removed-in-5-2). Instead, the Malta machine type is now recommended.
+
+This change has impacted our ability to run Xinu as intended on Ubuntu 22.04. We are actively seeking solutions or workarounds to address this compatibility issue.
+
+### Running Xinu on M-chip Mac
+🍎 Challenges with M-chip Mac
+
+Another challenge I face is running Xinu on M-chip Mac computers. Currently, Ubuntu does not provide a desktop version 20.04 for the M-chip Mac, which complicates the process of running Xinu on these machines.
+
+🔍 Looking for Community Contributions
+
+Welcome any insights, suggestions, or solutions from the community to resolve these issues. If you have experience or ideas that might help us run Xinu successfully on Ubuntu 22.04 or M-chip Mac, please feel free to **create an issue**. Your contribution could be a game-changer and would be greatly appreciated!
+
 ## Build Xinu
 ### 1. Setup Environment
 ```shell
