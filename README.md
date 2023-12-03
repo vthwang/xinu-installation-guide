@@ -1,5 +1,9 @@
 # Xinu Installation Guide
 Welcome to the Xinu Installation Guide. This guide will walk you through the steps to build and run Xinu.
+## Contributing and Collaboration
+If you find this guide helpful, please consider starring ⭐ the repository on GitHub to show your support. Your stars encourage further development and improvements!
+
+Also, contributions are always welcome. If you have any updates, corrections, or enhancements, feel free to create a Pull Request. Let's collaborate to make this guide even better for everyone!
 ## Build Xinu
 ### 1. Setup Environment
 ```shell
